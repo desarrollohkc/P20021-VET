@@ -1,0 +1,215 @@
+.filtos-asociaciones{
+  .filter-stps{
+    position: relative;
+    width: 328px;
+    margin-right: 15px;
+    float: left;
+    height: 59px;
+    margin-bottom: 15px;
+
+    .close{
+      position: absolute;
+      right: -12px;
+      top: 26px;
+    }
+
+    label{
+      display: block;
+      font-size: 12px;
+      color: $brand-secondary;
+      font-weight: 400;
+    }
+
+    select{
+      display: block;
+      color: $brand-primary;
+      border: none;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      width: 100%;
+    }
+
+    input{
+      display: block;
+      color: $brand-primary;
+      border: none;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      border-radius: 0;
+      width: 100%;
+    }
+
+    p{
+      display: block;
+      color: $brand-primary;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      width: 100%;
+      line-height: 34px;
+    }
+  }
+
+  p{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: $brand-secondary;
+    font-weight: 400;
+  }
+
+  .close-calendar{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #535353;
+    opacity: 0.8;
+    color: #f4f4f4;
+    float: right;
+    top: 6px;
+    right: -30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+.tags-filtros{
+  p{
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 26px 5px 8px;
+    position: relative;
+
+    a{
+      position: absolute;
+      right: 7px;
+      font-weight: 900;
+      font-size: 13px;
+      top: 3px;
+    }
+  }
+}
+
+.filtros-reportes{
+  .filter-elem{
+    position: relative;
+    width: 220px;
+    margin-right: 15px;
+    float: left;
+    height: 59px;
+    margin-bottom: 15px;
+
+    select{
+      display: block;
+      color: $brand-primary;
+      border: none;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      width: 100%;
+    }
+
+    input{
+      display: block;
+      color: $brand-primary;
+      border: none;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      border-radius: none;
+      width: 100%;
+    }
+
+    p{
+      display: block;
+      color: $brand-primary;
+      border-bottom: 1px solid $oro;
+      font-size: 13px;
+      font-weight: 600;
+      height: 35px;
+      width: 100%;
+      line-height: 34px;
+    }
+  }
+  .filter-label{
+    position: relative;
+    margin-right: 15px;
+    float: left;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+    label{
+      display: block;
+      font-size: 12px;
+      color: $brand-secondary;
+      font-weight: 400;
+    }
+  }
+
+  p{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    color: $brand-secondary;
+    font-weight: 400;
+  }
+
+  .close-calendar{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #535353;
+    opacity: 0.8;
+    color: #f4f4f4;
+    float: right;
+    top: 6px;
+    right: -30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+}
+
+.tags-filtros{
+  p{
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 26px 5px 8px;
+    position: relative;
+
+    a{
+      position: absolute;
+      right: 7px;
+      font-weight: 900;
+      font-size: 13px;
+      top: 3px;
+    }
+  }
+}

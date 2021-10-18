@@ -1,0 +1,352 @@
+header, .header{
+  height: 60px; 
+  background-color: $brand-primary;
+  color: white;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+
+  .header__logo {
+    height: 38px;
+  }
+
+  .logo-funcionario{
+    display: none;
+  }
+
+  .header__navigation{
+    .nav-link{
+      color: white;
+      font-size:16px;
+      padding: .5rem .7rem;
+      opacity: 0.8;
+
+      &.active{
+        opacity: 1; 
+        font-weight:bold;
+      }
+      &.disabled {
+        color: rgba(255, 255, 255, 0.3);
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+  }
+
+  .datos-usuario{
+    a {
+      text-decoration: none;
+      font-size: .95rem;
+      color: white;
+    }
+
+    p {
+      color: white;
+      font-size: .95rem;
+      font-weight: 400;
+      text-align: right;
+    }
+
+    .usuario {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      img {
+        width: auto;
+      }
+
+      .nombre-usuario{
+        color: white;
+        font-size: .95rem;
+        font-weight: bold;
+        margin: 0 .5rem 0 0;
+      }
+    }
+  }
+
+  .dropdown-menu{
+    background-color: $brand-secondary;
+
+    a{
+      &:hover{
+        color: white!important;
+      }
+    }
+
+    .dropdown-item-custom{
+      display: block;
+      width: 100%;
+      clear: both;
+      font-weight: 400;
+      text-align: inherit;
+      white-space: nowrap;
+      padding: 0 0.5rem;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+
+.footer{
+  background-image: url(/../images/patron-footer.svg);
+  background-repeat: no-repeat;
+  background-repeat-x: repeat;
+  background-position: bottom;
+  background-color: #272829;
+  border-bottom: 10px solid $oro;
+  padding: 32px 0 75px 0;
+  
+  .footer__logo {
+    max-height: 85px;
+    width: 90%;
+  }
+
+  h4{
+    color: white;
+    font-size: .95rem;
+
+    a{
+      font-size: .95rem;
+      text-decoration: underline;
+    }
+  }
+
+  a, p{
+    display: block;
+    color: white;
+    font-size: .8rem;
+    font-weight: 400;
+
+    &.social{
+      display: inline-block;
+
+      i{
+        color: white;
+        font-size: 1.7rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  p > a{
+    text-decoration: underline;
+    display: inline-block;
+  }
+
+  .soporte{
+    display: none;
+  }
+}
+
+.busqueda-avanzada{
+  display: none;
+}
+
+/*
+   Estilos funcionario
+*/
+
+.funcionario{
+
+  .text-title-resumen{
+    text-decoration: none;
+  }
+  .header{
+    background: #fff;
+    color: $brand-secondary;
+
+    .logo{
+      display: none;
+    }
+
+    .logo-funcionario{
+      display: inline-block;
+      color: $brand-secondary;
+      font-size: 13px;
+      text-align: center;
+      padding: 1px 20px;
+      font-weight: bold;
+      border-right: 1px solid $brand-secondary;
+    }
+
+    .header__navigation{
+      .nav-link{
+        opacity: 1; 
+        color: $brand-secondary;
+        font-size: 13px;
+
+        &.active{
+          color: $brand-primary;
+        }
+      }
+    }
+
+    .datos-usuario{
+      a {
+        color: $brand-secondary;
+      }
+
+      p {
+        color: $brand-secondary;
+      }
+
+      .usuario {
+        .nombre-usuario{
+          color: $brand-secondary;
+        }
+
+        svg{
+          path{
+            fill: $brand-secondary;
+          }
+        }
+      }
+
+      .dropdown-menu a{
+        color: #fff;
+        padding: 5px 14px;
+      }
+    }
+  }
+
+  .busqueda-avanzada{
+    display: inline-block;
+  }
+
+  .block{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+
+    &.block-4{
+       padding: 20px 40px;
+    }
+
+    &.sidebar{
+      font-size:14px;
+    }
+  }
+
+  .fecha-resumen{
+    display: none;
+  }
+
+  .footer{
+    background-color: #7f868f;
+    color: #fff;
+    padding: 17px 0 61px 0;
+    border-bottom: none;
+
+    .footer__logo {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .soporte{
+      display: block;
+    }
+
+    .representante{
+      display: none;
+    }
+  }
+}
+
+.container-oficina{
+  
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+
+  h3{
+    font-size: 15px;
+    color: $brand-primary;
+    margin-bottom: 15;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 14px;
+    color: $brand-secondary;
+  }
+
+  a{
+    font-size: 14px;
+    color: #164b7e;
+  }
+}
+
+.continer-login-form{
+  padding-left: 22px;
+  padding-right: 22px;
+
+  h2{
+    font-size: 20px;
+  }
+
+  label{
+    font-size: 18px;
+  }
+
+  .form-check-label{
+    color: #999999;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  .olvide-contrasena{
+    font-size: 14px;
+  }
+}
+
+.container-login{
+  border-right: 1px solid #d8d8d8;
+  padding-left: 22px;
+  padding-right: 22px;
+
+  h1{
+    font-size: 20px;
+    color: #235b4e;
+    font-weight: bold;
+  }
+
+  img{
+    max-width: 539px;
+    width: 100%;
+    margin-bottom:5px;
+  }
+}
+
+.text-numeral{
+  .numero{
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    color: #235b4e;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 22px;
+
+    a{
+      color: #235b4e;
+      font-weight: bold;
+    }
+
+    span{
+      display: table;
+      border-left: 1px solid #235b4e;
+      padding-left: 9px;
+    }
+  }
+}

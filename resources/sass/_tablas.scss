@@ -1,0 +1,448 @@
+.table, table{
+  table-layout:fixed;
+
+  &.nofixed{
+    table-layout:initial;
+  }
+
+  thead{
+    border-bottom: 2px solid #243b5e;
+
+    th{
+      border: none;
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      background-color: #243b5e;
+
+      &.estado{
+        min-width: 24%;
+        overflow: hidden;
+      }
+    }
+  }
+
+  tbody{
+    th{
+      border: none;
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+      text-align: center;
+      background-color: #efebdd;
+
+      &.estado{
+        min-width: 24%;
+        overflow: hidden;
+
+        li{
+          list-style: none;
+        }
+      }
+    }
+
+    tr{
+      td{
+        font-size: 13px;
+        text-align: center;
+        border-bottom: 1px solid #243b5e;
+
+        a{
+          font-size:13px;
+          color: slategrey;
+            i{
+                color: slategrey;
+            }
+        }
+
+        ul{
+          text-align: center;
+          width: 100%;
+
+          li{
+            list-style: none;
+            display: inline-block;
+            margin: 6px;
+          }
+        }
+      }
+
+      .acciones-show{
+          min-width: 24%;
+          text-align: center;
+          ul{
+              list-style: none;
+              margin:0;
+              padding: 0;
+
+              li{
+                  display: inline-block;
+                  margin: 0 5px;
+                  vertical-align: middle;
+
+                  .editar{
+                      color: $oro;
+                  }
+
+                  .contratos{
+                      color: green;
+                  }
+
+                  .eliminar{
+                      color: #d0021b;
+                  }
+
+                  img{
+                      height: 19px;
+                  }
+              }
+          }
+      }
+      .acciones{
+        min-width: 24%;
+        text-align: center;
+
+        ul{
+          list-style: none;
+          margin:0;
+          padding: 0;
+
+          li{
+            display: inline-block;
+            margin: 0 5px;
+            vertical-align: middle;
+
+            a{
+              font-size: 11px;
+
+              span{
+                display: inline-block;
+                text-align: left;
+                color: #243b5e;
+              }
+            }
+
+            .tramite{
+              display: inline-block;
+              height: 23px;
+              float: left;
+              margin-right: 5px;
+              margin-top: 4px;
+            }
+
+            .editar{
+              color: $oro;
+            }
+
+            .contratos{
+              color: green;
+            }
+
+
+            .eliminar{
+              color: #d0021b;
+            }
+
+            img{
+              height: 19px;
+            }
+          }
+        }
+      }
+
+      a{
+        font-weight: 700 !important;
+      }
+
+      .estado{
+        min-width: 24%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      &:hover{
+        background: #f6f6f6;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+
+        .acciones{
+          display: table-cell;
+        }
+      }
+    }
+  }
+
+  &.tabulador-table{
+    thead{
+
+      .close{
+        display: block;
+        color: #243b5e;
+        cursor: pointer;
+      }
+
+      th{
+        font-size: 16px;
+      }
+    }
+
+    tbody{
+      tr{
+        .close{
+          position: absolute;
+          left: -4px;
+          color: $brand-primary;
+          cursor: pointer;
+        }
+
+        th{
+          height: 40px;
+          padding: 0.49rem 0.75rem;
+          font-size: 16px;
+        }
+
+        td{
+          padding: 0;
+          width: 169px;
+          height: 40px;
+
+          input{
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tab-table{
+  a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #243b5e;
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &.active{
+      color: #243b5e;
+      border-bottom: 2px solid;
+      padding-bottom: 7px;
+    }
+    &:hover{
+      border-bottom: 2px solid;
+      padding-bottom: 7px;
+      text-decoration:none
+    }
+  }
+
+  button{
+    position: absolute;
+    right: 15px;
+    padding: 5px 10px;
+    font-size:16px
+  }
+}
+
+.action-list{
+    list-style: none;
+    li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.table-layout-auto{
+    table-layout: auto;
+}
+
+.table-requisitos tbody tr:hover{
+  background: #fff;
+  box-shadow: none !important;
+  cursor: inherit !important;
+}
+
+.table-requisitos tbody tr td {
+  font-size:16px;
+  border-bottom:1px solid #ccc;
+  padding:5px 0px;
+  span{
+    color:#243b5e;
+    font-weight:bold
+  }
+}
+
+.table-admin{
+    border: 1px solid $oro !important;
+    table-layout: auto;
+    min-width: 150%;
+
+    & thead{
+        border-bottom: none;
+        border-top: 1px solid $oro ;
+    }
+
+    & tbody tr td, & thead  th{
+        border-right: 1px solid $oro;
+        border-left: 1px solid $oro ;
+    }
+
+    & tbody tr:last-child td{
+        border-bottom: 1px solid $oro ;
+    }
+}
+
+.sticky-col {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.table tbody tr:hover, table tbody tr:hover {
+    .sticky-col {
+        background: #f6f6f6;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+}
+
+.first-col {
+    min-width: 150%;
+    max-width: 150%;
+    left: 0px;
+}
+
+/*
+   Estilos funcionario
+*/
+
+.funcionario {
+    .table, table {
+        thead {
+            border-bottom: 2px solid $brand-secondary;
+
+            th {
+                background-color: #f4f4f4;
+                padding: 6px 10px;
+            }
+        }
+
+        tbody {
+
+            tr {
+                td {
+                    border-bottom: 1px solid #cccccc;
+                    color: #717474;
+
+                    &.small{
+                      padding-bottom: 0;
+                      a, button{
+                        padding-top:0;
+                      }
+                    }
+                }
+            }
+        }
+    }
+
+    .tab-table {
+        a {
+            color: $brand-secondary;
+
+            &.active {
+                color: $brand-primary;
+            }
+
+            &:hover {
+                color: $brand-primary;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.table-user{
+    & thead{
+        border-top: none;
+        border-bottom: 1px solid $oro !important;
+        background-color: $oro;
+
+    }
+
+
+    & tr th{
+        background-color:transparent;
+        border-bottom: 1px solid #cccccc;
+
+    }
+}
+
+.bg-color-transparent{
+    background-color: transparent;
+}
+tr.next-hover{
+    border-top: 1px solid #ccc;
+}
+
+tr.noBorder td, .prev-hover {
+    border: 0;
+    border-bottom: none !important;
+}
+
+tr.next-hover:hover, tr.next-hover:hover + tr, .active-tr{
+    background: #f6f6f6;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.table-fixed {
+  thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+}
+
+.oculta-header {
+  position: sticky;
+  top: -1px;
+  z-index: 9;
+}
+
+.is-pinned {
+  background-color: white;
+  width: 102%;
+  height: 60px;
+}
+
+.escalaColor{
+    border-radius: 25px;
+    background: rgba(137, 196, 244, .2);
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+.iconSVG{
+    width: 100px;
+    height: 100px;
+}
+
+.search_tag{
+    border-radius: 25px;
+    background: rgba(137, 196, 244, .2);
+    padding: 10px;
+}
+
+.side_bar_tag{
+    border-radius: 25px;
+    background: #FFFFFF;
+    padding: 10px;
+    color: #243b5e;
+}
+

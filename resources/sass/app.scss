@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+@import 'variables';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import '~jquery-ui/themes/base/all.css';
+
+@import 'general';
+@import 'forms';
+@import 'tramites';
+@import 'reportes';
+@import 'buttons';
+@import 'barra-progreso';
+@import 'tablas';
+@import 'modal';
+@import 'resumen';
+
+@import 'regions/layout';
+@import 'regions/documentos';
+@import 'regions/miembros';
+@import 'regions/estatutos';
+@import 'regions/revision';
+@import 'regions/admin';
+@import 'regions/filters';
+@import 'regions/asociaciones';
+@import 'regions/buzon';
+@import 'regions/datepicker';
+@import 'regions/puestos';
+

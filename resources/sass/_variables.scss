@@ -1,0 +1,52 @@
+/*
+|--------------------------------------------------------------------------
+| Colors
+|--------------------------------------------------------------------------
+*/
+
+$brand-primary:			#243b5e;
+$brand-primary-light:	#d82138;
+$brand-secondary:		#545454;
+$brand-danger:			#d0021b;
+
+$input-text:			#999999;
+$input-color:			#cccccc;
+
+$gray:					#dce0e0;
+$gray-dark:				#898d8d;
+$oro:					#b38e5d;
+
+$green:                 #2C572C;
+$green-light:           #01ab40;
+$gree-dark:             #235b4e;
+$oro-secondary:         #efebdd;
+
+$blue-dark:  			#164b7e;
+$white-dark:            #f6f6f6;
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$font-family-sans-serif:      'Montserrat', sans-serif;
+$font-family-base:            $font-family-sans-serif;
+$font-weight-base:            500;
+$text-color:                  $brand-secondary;
+
+$link-color:                  $brand-primary;
+$link-hover-color:            darken($link-color, 15%);
+$link-hover-decoration:       underline;
+
+
+/*
+|--------------------------------------------------------------------------
+| Spacing
+|--------------------------------------------------------------------------
+*/
+
+$spacer:                               22px;
+$spacer-x:                             $spacer;
+$spacer-y:                             $spacer;

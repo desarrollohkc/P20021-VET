@@ -1,0 +1,47 @@
+.contenedor-documento{
+  border-bottom: 1px solid #e6e8eb;
+  background-color: #f6f6f6;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+
+  a{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 9px 15px;
+    color: $brand-secondary;
+    font-weight: 700;
+    font-size: 0.9rem;
+
+    span{
+      color: $brand-secondary;
+      font-weight: 500;
+      padding-left:10px;
+    }
+  }
+
+  .eliminar{
+    display:none;
+  }
+
+  &:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+    z-index:2;
+
+    .eliminar{
+      display: block;
+      position: absolute;
+      width: 118px;
+      font-weight: 700;
+      color: #d0021b;
+      right: 0;
+      top: 0px;
+
+      img{
+        vertical-align: sub;
+      }
+    }
+  }
+}

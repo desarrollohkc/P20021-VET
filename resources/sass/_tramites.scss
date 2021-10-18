@@ -1,0 +1,108 @@
+.bg-finalizado, .bg-publicado{
+	background: #38c17238;
+}
+
+.bg-finalizado>td, .bg-publicado>td{
+	border-bottom: .5px solid #99b9a7 !important;
+	border-top: .5px solid #99b9a7 !important;
+}
+.border-red{
+    border: 1px solid $brand-primary;
+}
+.box_ramas{
+	position: relative;
+    height: 450px;
+    overflow-y: scroll;
+    padding-right: 40px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+}
+.box_asociaciones{
+    position: relative;
+    height: 250px;
+    overflow-y: scroll;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+}
+.icon_search{
+	position: relative;
+    float: right;
+    top: -34px;
+    right: 18px;
+}
+.icon_clear{
+	cursor:pointer
+}
+
+.box-convocatoria{
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background-color: #f6f6f6;
+    padding:15px 5px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #545454;
+}
+.box-convocatoria > div > span{
+    color: #243b5e !important;
+}
+
+.box-convocatoria:hover, .box-conv-empresa:hover{
+	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #243b5e !important;
+	color: #ffffff !important;
+
+    & .c-asociacion{
+        color: #ffffff !important;
+    }
+}
+
+.box-conv-empresa{
+    &:hover{
+        .titulo-busqueda{
+            color: white;
+        }
+    }
+}
+
+.box-convocatoria:hover > div > span{
+    color: #ffffff !important;
+}
+.c-active{
+	box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #243b5e !important;
+	color: #ffffff !important;
+
+    & .c-asociacion{
+        color: #ffffff !important;
+    }
+
+    & .titulo-busqueda{
+      color: white !important;
+    }
+}
+
+.c-active > div > span{
+    color: #ffffff !important;
+}
+
+.c-asociacion{
+	font-size: 16px !important;
+	color:#393c3e !important;
+}
+.fc-black{
+		color: #393c3e !important;
+}
+.c-tit-lista{
+	font-size: 14px;
+}
+.c-elem-lista{
+	font-size: 13px !important;
+	list-style:none !important;
+}
+
+
+.opt-asociacion:hover{
+    background:#ccc;
+    cursor:pointer;
+}

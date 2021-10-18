@@ -1,0 +1,147 @@
+.barra-progreso{
+  position:relative;
+  text-align:center !important;
+  word-spacing: -7px;
+
+  .progreso-step{
+    display: inline-block;
+    word-spacing: -6px;
+
+    .line{
+      display: inline-block;
+      word-spacing: -6px;
+      height: 4px;
+      width: 29px;
+      background: $gray;
+
+      &.active{
+        background: $brand-primary;
+      }
+    }
+
+    .step{
+      display: inline-block;
+      word-spacing: -6px;
+      line-height: 27px;
+      height: 26px;
+      width: 26px;
+      background: $gray;
+      border-radius: 50%;
+      vertical-align: middle;
+      color: #fff;
+      text-align: center !important;
+
+      &.active{
+        background: $brand-primary;
+      }
+    }
+
+    .marc-error{
+      background: $brand-primary;
+      position: absolute;
+      width: 26px;
+      height: 3px;
+      margin-left: -55px;
+      margin-top: 28px;
+
+      &.active{
+        background: $brand-primary;
+      }
+    }
+
+    .marc-error-end{
+      background: $brand-primary;
+      position: absolute;
+      width: 26px;
+      height: 3px;
+      margin-left: -27px;
+      margin-top: 28px;
+
+      &.active{
+        background: $brand-primary;
+      }
+    }
+  }
+
+  &.vertical-top{
+    .progreso-step{
+      vertical-align: top;
+    }
+  }
+}
+
+.progreso-step{
+  &.by-name{
+    text-align: center;
+    width: 120px;
+    word-spacing: 2px;
+    .step{
+          height: 12px;
+    width: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .line{
+      position: relative;
+      top: -2px;
+      right: -8px;
+      margin-left: -117px;
+      width: 111px;
+      z-index: 0;
+    }
+  }
+
+  .barra-name{
+    position: relative;
+    top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    &.active{
+        color: $brand-primary;
+      }
+  }
+}
+
+/*
+   Estilos funcionario
+*/
+.funcionario{
+  .barra-progreso{
+    .progreso-step{
+      .line{
+        background: #232323;
+        height: 2px;
+        top: -4px;
+
+        &.active{
+          background: $brand-primary;
+        }
+      }
+
+      .step{
+        background: transparent;
+        border: 2px solid #232323;
+
+        &.active{
+          background: transparent;
+          border: 2px solid $brand-primary;
+
+          &.font-weight-bold{
+            background: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-green{
+  color: #009135;
+  font-weight: bold;
+}
+
+.text-red{
+  color: #c31e33;
+  font-weight: bold;
+}

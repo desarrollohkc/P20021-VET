@@ -1,0 +1,53 @@
+ul{
+  padding: 0;
+  margin: 0;
+
+  .nav-estatutos{
+    display: inline-block;
+    position: relative;
+    width: auto;
+    padding: 5px 30px;
+    color: $brand-secondary;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover{
+      color: $brand-primary;
+    }
+
+    &.active{
+      font-weight: bold;
+      color: $brand-primary;
+    }
+
+    img{
+      position: absolute;
+      right: 5px;
+      top: 0;
+      width: 21px;
+    }
+  }
+}
+
+.paginate-estatutos{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li{
+    width: 10px;
+    height: 10px;
+    background-color: $gray;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $brand-primary;
+    }
+
+    &.active{
+      background-color: $brand-primary;
+    }
+  }
+}

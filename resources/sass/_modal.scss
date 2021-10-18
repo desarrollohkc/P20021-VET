@@ -1,0 +1,49 @@
+.modal-stps{
+  @media (min-width: 576px){
+    max-width: 920px;
+  }
+}
+
+
+.modal-content{
+  .modal-header{
+    background-color: #243b5e;
+
+    .modal-title{
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      font-size: 1.13rem;
+    }
+
+    .close{
+      color: #fff;
+    }
+  }
+
+  .modal-body{
+    padding: 2rem;
+  }
+}
+
+#modalOpcFirmaBody{
+  .information-important {
+    p{
+      font-size: 15px;
+      text-align: left;
+    }
+  }
+}
+
+.modal-content-admin{
+    .modal-header{
+        background-color: #f4f4f4;
+
+        .modal-title{
+            color: $brand-primary;
+            text-align: center;
+            width: 100%;
+            font-size: 1.13rem;
+        }
+    }
+}

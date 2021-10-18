@@ -1,0 +1,43 @@
+.continer-puestos{
+  label, .label{
+    font-size: 14px;
+  }
+
+  h1{
+  	font-size: 17px;
+  	color: $brand-primary;
+  	font-weight: bold;
+  }
+
+  a.bold{
+  	font-weight: bold;
+  	text-decoration: underline;
+  	font-size: 14px;
+  }
+}
+
+.content-tramites{
+  position: relative;
+  padding-bottom: 15px; 
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 15px;
+}
+
+.estructura-superior{
+	border: 1px solid $brand-primary;
+	padding: 10px;
+
+	img{
+		width: 15px;
+    	margin-left: -3px;
+	}
+
+	.puesto-jerarquico{
+		font-size: 14px;
+
+		span{
+			color: $brand-primary;
+			font-weight: bold;
+		}
+	}
+}
